@@ -13,7 +13,7 @@
         <meta name="description" content="technology blog">
       
       
-        <link rel="canonical" href="https://osmboy.com/algorithm/hackerrank/matrix_script/">
+        <link rel="canonical" href="https://osmboy.com/algorithm/hackerrank/array_manipulation/">
       
       
         <meta name="author" content="osmboy">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Matrix Script - osmboy</title>
+        <title>Array manipulation - osmboy</title>
       
     
     
@@ -110,7 +110,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#matrix-script" tabindex="1" class="md-skip">
+      <a href="#problem-description" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -136,7 +136,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Matrix Script
+                Array manipulation
               
             </span>
           
@@ -392,56 +392,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Matrix Script
-      </label>
-    
-    <a href="./" title="Matrix Script" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../matrix_script/" title="Matrix Script" class="md-nav__link">
       Matrix Script
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#problem-description" class="md-nav__link">
-    Problem Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#problem-solving" class="md-nav__link">
-    Problem Solving
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -461,11 +416,65 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../array_manipulation/" title="Array manipulation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Array manipulation
+      </label>
+    
+    <a href="./" title="Array manipulation" class="md-nav__link md-nav__link--active">
       Array manipulation
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem-description" class="md-nav__link">
+    Problem Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-solving" class="md-nav__link">
+    Problem Solving
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    解析思路：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -529,8 +538,6 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -546,6 +553,19 @@
   <a href="#problem-solving" class="md-nav__link">
     Problem Solving
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    解析思路：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -565,77 +585,77 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/osmboy/blog/edit/master/docs/algorithm/hackerrank/matrix_script.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/osmboy/blog/edit/master/docs/algorithm/hackerrank/array_manipulation.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="matrix-script">Matrix Script<a class="headerlink" href="#matrix-script" title="Permanent link">&para;</a></h1>
-<div class="toc">
+                  <h1>Array manipulation</h1>
+                
+                <div class="toc">
 <ul>
-<li><a href="#matrix-script">Matrix Script</a><ul>
 <li><a href="#problem-description">Problem Description</a></li>
-<li><a href="#problem-solving">Problem Solving</a></li>
+<li><a href="#problem-solving">Problem Solving</a><ul>
+<li><a href="#_1">解析思路：</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <h2 id="problem-description">Problem Description<a class="headerlink" href="#problem-description" title="Permanent link">&para;</a></h2>
-<p>Neo has a complex <em>matrix script</em>. The <em>matrix script</em> is a <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> X <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>  grid of strings. It consists of alphanumeric characters, spaces and symbols (!,@,#,$,%,&amp;).</p>
-<p><img alt="Capture.JPG" src="https://s3.amazonaws.com/hr-challenge-images/12524/1442753362-1075bd12d9-Capture.JPG" /></p>
-<p>To decode the script, Neo needs to read each column and select only the alphanumeric characters and connect them. Neo reads the column from top to bottom and starts reading from the leftmost column.</p>
-<p>If there are symbols or spaces between two alphanumeric characters of the decoded script, then Neo replaces them with a <em>single</em> space '' for better readability.</p>
-<p>Neo feels that there is no need to use '<code>if</code>' conditions for decoding.</p>
-<p><em>Alphanumeric characters</em> consist of: [A-Z, a-z, and 0-9].</p>
-<p><strong>Input Format</strong></p>
-<p>The first line contains space-separated integers <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> (rows) and <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> (columns) respectively.
-The next <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> lines contain the row elements of the <em>matrix script</em>.</p>
-<p><strong>Constraints</strong></p>
-<p><span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span> &lt; <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>, <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> &lt; <span><span class="MathJax_Preview">100</span><script type="math/tex">100</script></span></p>
-<p><strong>Note</strong>: A <span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span> score will be awarded for using '<code>if</code>' conditions in your code.</p>
-<p><strong>Output Format</strong></p>
-<p>Print the decoded <em>matrix script</em>.</p>
-<p><strong>Sample Input 0</strong></p>
-<div class="codehilite"><pre><span></span>7 3
-Tsi
-h%x
-i #
-sM 
-$a 
-#t%
-ir!
+<p>Devendra在9号云上看到了他的教练朝他微笑。 每次教授选出Devendra单独问他一个问题，Devendra朦胧的头脑里全是他的教练和她的微笑，以至于他无法专注于其他事情。帮助他解决这个问题：</p>
+<p>给你一个长度为N的列表，列表的初始值全是0。对此列表，你要进行M次查询，输出列表种最终N个值的最大值。对每次查询，给你的是3个整数——a,b和k，你要对列表中从位置a到位置b范围内的（包含a和b)的全部元素加上k。</p>
+<p><strong>输入格式</strong></p>
+<p>第一行包含两个整数 <em>N*和 *M</em>。
+接下来 M行，每行包含3个整数 <em>a</em>, <em>b</em> 和 <em>k</em>。
+<strong>列表中的数位置编号为从1到 N。</strong></p>
+<p><strong>输出格式</strong></p>
+<p>单独的一行包含 <strong>最终列表里的最大值</strong></p>
+<p><strong>约束条件</strong></p>
+<p>3 &lt;= <strong>N</strong> &lt;= 10^7
+1 &lt;= <strong>M</strong> &lt;= 2*10^5
+1 &lt;= a &lt;= b &lt;= N
+0 &lt;= k &lt;= 10^9</p>
+<p><strong>输入样例 #00:</strong></p>
+<div class="codehilite"><pre><span></span>5 3
+1 2 100
+2 5 100
+3 4 100
 </pre></div>
 
-<p><strong>Sample Output 0</strong></p>
-<div class="codehilite"><pre><span></span>This is Matrix#  %!
+<p><strong>输出样例 #00:</strong></p>
+<div class="codehilite"><pre><span></span>200
 </pre></div>
 
-<p><strong>Explanation 0</strong></p>
-<p>The decoded script is:</p>
-<div class="codehilite"><pre><span></span>This$#is% Matrix#  %!
-</pre></div>
-
-<p>Neo replaces the symbols or spaces between two alphanumeric characters with a single space   ' ' for better readability.</p>
-<p>So, the final decoded script is:</p>
-<div class="codehilite"><pre><span></span>This is Matrix#  %!
-</pre></div>
-
+<p><strong>解释:</strong></p>
+<p>第一次更新后，列表变为 <code>100 100 0 0 0</code>，
+第二次更新后，列表变为 <code>100 200 100 100 100</code>。
+第三次更新后，列表变为 <code>100 200 200 200 100</code>。
+因此要求的答案是200。</p>
 <h2 id="problem-solving">Problem Solving<a class="headerlink" href="#problem-solving" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="ch">#!/bin/python</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
-
-
-
-<span class="n">first_multiple_input</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">first_multiple_input</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">first_multiple_input</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="n">matrix</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="n">md</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span>
-<span class="n">md</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(?&lt;=[A-Za-z0-9])[\!@#\$%&amp;\s]+(?=[A-Za-z0-9])&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">md</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">md</span>
+<h3 id="_1">解析思路：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>列表范围更新查询，列表为A,更新参数位<span><span class="MathJax_Preview">[l，r, x]</span><script type="math/tex">[l，r, x]</script></span>,每次把范围区间<span><span class="MathJax_Preview">[l,r]</span><script type="math/tex">[l,r]</script></span>的值逐个增加<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>,如果采取迭代递增的方式算法的时间复杂度将会是<span><span class="MathJax_Preview">O(n^2)</span><script type="math/tex">O(n^2)</script></span>。</p>
+<p>这里我们做一个巧妙处理，我们把增加的值记为差量<span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span>，记 <span><span class="MathJax_Preview">D[i]  = A[i] - A[i-1]</span><script type="math/tex">D[i]  = A[i] - A[i-1]</script></span>。</p>
+<p>在范围区间<span><span class="MathJax_Preview">[l，r]</span><script type="math/tex">[l，r]</script></span>内,让<span><span class="MathJax_Preview">D[l]° = D[l] + x</span><script type="math/tex">D[l]° = D[l] + x</script></span>, <span><span class="MathJax_Preview">D[r+1]° = D[r+1] -x</span><script type="math/tex">D[r+1]° = D[r+1] -x</script></span>。</p>
+<p><span><span class="MathJax_Preview">D[l]° = D[l] + x</span><script type="math/tex">D[l]° = D[l] + x</script></span> 好理解，但是为什么还要<span><span class="MathJax_Preview">D[r+1]</span><script type="math/tex">D[r+1]</script></span> 减少为原来的增值<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>呢?（其中°表示新的列表项）</p>
+<p>因为区间是<span><span class="MathJax_Preview">[l,r]</span><script type="math/tex">[l,r]</script></span>内，所有的<span><span class="MathJax_Preview">A[i]（l&lt;=i&lt;=r）</span><script type="math/tex">A[i]（l<=i<=r）</script></span> 都要增加<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>,即 <span><span class="MathJax_Preview">A[i]° = A[i] + x (l&lt;=i&lt;=r)</span><script type="math/tex">A[i]° = A[i] + x (l<=i<=r)</script></span>，</p>
+<p>而 <span><span class="MathJax_Preview">A[i]° = A[i-1]° + D[i]° = ... = A[l]° + D[l+1]°+...+D[i]° = D[L]° + A[i-1]° + D[l+1]°+...+D[i]°</span><script type="math/tex">A[i]° = A[i-1]° + D[i]° = ... = A[l]° + D[l+1]°+...+D[i]° = D[L]° + A[i-1]° + D[l+1]°+...+D[i]°</script></span>，</p>
+<p>其中 <span><span class="MathJax_Preview">A[i-1]° + D[l+1]°+...+D[i]°</span><script type="math/tex">A[i-1]° + D[l+1]°+...+D[i]°</script></span> 都是没有改变过的，因为变更范围是<span><span class="MathJax_Preview">[l,r]</span><script type="math/tex">[l,r]</script></span>且差值<span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span>只改变的是<span><span class="MathJax_Preview">D[l]</span><script type="math/tex">D[l]</script></span>和<span><span class="MathJax_Preview">D[r+1]</span><script type="math/tex">D[r+1]</script></span>，</p>
+<p>所以 <span><span class="MathJax_Preview">A[i]° = D[l]° +  A[i-1] + D[l+1]+...+D[i] = D[l] + A[i-1] + D[l+1]+...+D[i] + x = A[i] + x</span><script type="math/tex">A[i]° = D[l]° +  A[i-1] + D[l+1]+...+D[i] = D[l] + A[i-1] + D[l+1]+...+D[i] + x = A[i] + x</script></span>，所以<span><span class="MathJax_Preview">D[l]° = D[l] + x</span><script type="math/tex">D[l]° = D[l] + x</script></span> 对于<span><span class="MathJax_Preview">A[i]</span><script type="math/tex">A[i]</script></span> 在<span><span class="MathJax_Preview">[l,r]</span><script type="math/tex">[l,r]</script></span>区间内都满足<span><span class="MathJax_Preview">A[i]° = A[i] + x</span><script type="math/tex">A[i]° = A[i] + x</script></span>。</p>
+<p>但是对于<span><span class="MathJax_Preview">[r+1, ＋∞)</span><script type="math/tex">[r+1, ＋∞)</script></span>呢？这个范围的值是没有改边的。即 <span><span class="MathJax_Preview">A[i]° = A[i] (r+1&lt;=i)</span><script type="math/tex">A[i]° = A[i] (r+1<=i)</script></span></p>
+<p>此时 <span><span class="MathJax_Preview">A[i]° = D[r+1]° + A[r]° + D[r+2]°+...+D[i]° = D[r+1]°+ D[r]° + A[r-1]°+ D[r+2]°+...+D[i]° = D[r+1]° + D[r] + x + A[r-1]+ D[r+2]+...+D[i]</span><script type="math/tex">A[i]° = D[r+1]° + A[r]° + D[r+2]°+...+D[i]° = D[r+1]°+ D[r]° + A[r-1]°+ D[r+2]°+...+D[i]° = D[r+1]° + D[r] + x + A[r-1]+ D[r+2]+...+D[i]</script></span></p>
+<p>可见<span><span class="MathJax_Preview">A[i]</span><script type="math/tex">A[i]</script></span>中有一个<span><span class="MathJax_Preview">D[r]°</span><script type="math/tex">D[r]°</script></span>的值增加了<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>，要想<span><span class="MathJax_Preview">A[i]°</span><script type="math/tex">A[i]°</script></span>保持不变 <span><span class="MathJax_Preview">D[r+1]</span><script type="math/tex">D[r+1]</script></span>必需减少<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>，即 </p>
+<p><span><span class="MathJax_Preview">A[i]° = D[r+1]° + D[r] + x + A[r-1]+ D[r+2]+...+D[i] = D[r+1] -x + D[r] + x + A[r-1]+ D[r+2]+...+D[i] = D[r+1] + D[r] + A[r-1]+ D[r+2]+...+D[i] = A[i]</span><script type="math/tex">A[i]° = D[r+1]° + D[r] + x + A[r-1]+ D[r+2]+...+D[i] = D[r+1] -x + D[r] + x + A[r-1]+ D[r+2]+...+D[i] = D[r+1] + D[r] + A[r-1]+ D[r+2]+...+D[i] = A[i]</script></span></p>
+<p>对于<span><span class="MathJax_Preview">(-∞，l)</span><script type="math/tex">(-∞，l)</script></span> <span><span class="MathJax_Preview">A[i]° = A[i-1]° + D[i]°</span><script type="math/tex">A[i]° = A[i-1]° + D[i]°</script></span>因为<span><span class="MathJax_Preview">i &lt; l</span><script type="math/tex">i < l</script></span>此时D对于小于l的并没有变化所以<span><span class="MathJax_Preview">D[i]° = D[i]</span><script type="math/tex">D[i]° = D[i]</script></span>,即 <span><span class="MathJax_Preview">A[i]°= A[i-1] + D[i] = A[i]</span><script type="math/tex">A[i]°= A[i-1] + D[i] = A[i]</script></span></p>
+<p>代码如下：</p>
+<div class="codehilite"><pre><span></span><span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="n">d</span><span class="p">[</span><span class="n">begin</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">step</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="n">end</span><span class="p">]</span> <span class="o">-=</span> <span class="n">step</span>
+<span class="nb">max</span> <span class="o">=</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">i</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">max</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">):</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">x</span>
+<span class="k">print</span> <span class="p">(</span><span class="nb">max</span><span class="p">)</span>
 </pre></div>
                 
                   
@@ -657,7 +677,7 @@ ir!
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../morgan_and_a_string/" title="Morgan and a String" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../minion_game/" title="Minion game" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -666,19 +686,19 @@ ir!
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Morgan and a String
+                Minion game
               </span>
             </div>
           </a>
         
         
-          <a href="../minion_game/" title="Minion game" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../about/" title="Contact Me" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Minion game
+                Contact Me
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
